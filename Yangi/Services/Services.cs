@@ -31,7 +31,7 @@ namespace Yangi.Services
             while (!exit)
             {
                 Console.Clear();
-                for (int i = 0; i <= buyruq3.Count; i++)
+                for (int i = 0; i < buyruq3.Count; i++)
                 {
                     if (i == index)
                     {

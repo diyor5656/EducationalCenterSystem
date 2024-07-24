@@ -61,17 +61,17 @@ namespace Yangi.Services
             {
                 return new List<About>();
             }
-
-            string jsonFromFile = File.ReadAllText(GetAboutPAth());
-            var abouts = string.IsNullOrEmpty(jsonFromFile) ? new List<About>() : JsonSerializer.Deserialize<List<About>>(jsonFromFile);
-
-            Console.WriteLine("Malumotlar Jadvali:");
-            foreach (var about in abouts)
-            {
-                Console.WriteLine($"Id: {about.Id}, Malumot: {about.Name}");
-            }
-
-            return abouts;
+            
+           
+           
+                string jsonFromFile = File.ReadAllText(GetAboutPAth());
+                var abouts = string.IsNullOrEmpty(jsonFromFile) ? new List<About>() : JsonSerializer.Deserialize<List<About>>(jsonFromFile);
+                foreach (var about in abouts)
+                {
+                    Console.WriteLine($" Malumot: {about.Name}");
+                }
+                return abouts;
+            
         }
 
         public void DeleteAbout()
