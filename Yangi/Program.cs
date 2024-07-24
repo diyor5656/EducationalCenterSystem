@@ -135,7 +135,7 @@ public static class Program
             {
                 if (i == index)
                 {
-                    Console.BackgroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Blue;
                     Console.ForegroundColor = ConsoleColor.Black;
                 }
                 Console.WriteLine(buyruq3[i]);
