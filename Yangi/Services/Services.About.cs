@@ -53,7 +53,7 @@ namespace Yangi.Services
 
         public List<About> GetAbout()
         {
-            if (!File.Exists(GetAboutPAth()))
+            if (File.Exists(GetAboutPAth()))
             {
                 Console.WriteLine("Malumotlar yo'q");
             }
