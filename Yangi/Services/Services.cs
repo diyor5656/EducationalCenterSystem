@@ -208,7 +208,7 @@ namespace Yangi.Services
             var index = 0;
             List<string> buyruq3 = new List<string>()
                 {
-            "Ariza to'ldirishj",
+            "Ariza to'ldirish",
             "Arizalarim",
             "Arizamni Tahrirlash",
             "Arizalarimni O'chirish",
