@@ -18,6 +18,7 @@ namespace Yangi.Services
         }
         public void ClearTFile()
         {
+            Console.Clear();
             File.WriteAllText(GetTeacherPAth(), string.Empty);
             Console.WriteLine("Malumotlar tozalandi");
         }
@@ -29,7 +30,7 @@ namespace Yangi.Services
         }
         public void AddTeacher()
         {
-
+            Console.Clear();
             List<Teachers> teachers = GetTeachers();
 
             Console.Write("Mentor Ismini kiriting: ");
@@ -56,6 +57,7 @@ namespace Yangi.Services
         }
         public List<Teachers> GetTeachers()
         {
+            Console.Clear();
             if (!File.Exists(GetTeacherPAth()))
             {
                 Console.WriteLine("Hozircha Mentorlar yo'q");
@@ -78,6 +80,7 @@ namespace Yangi.Services
         }
         public void DeleteTeacher()
         {
+            Console.Clear();
             List<Teachers> teachers = GetTeachers();
 
             Console.Write("O'chirish uchun Mentor ismini kiriting: ");
@@ -101,6 +104,7 @@ namespace Yangi.Services
         }
         public void UpdateTeacher()
         {
+            Console.Clear();
             List<Teachers> teachers = GetTeachers();
 
             Console.Write("Yangilash ucun Mentor Id sini kiriting : ");

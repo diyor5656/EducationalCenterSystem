@@ -19,6 +19,7 @@ namespace Yangi.Services
 
         public void ClearArFile()
         {
+            Console.Clear();
             File.WriteAllText(GetKursPAth(), string.Empty);
             Console.WriteLine("Malumotlar tozalandi! ");
         }
@@ -31,12 +32,13 @@ namespace Yangi.Services
 
         public void AddAriza()
         {
+            Console.Clear();
             List<Ariza> arizas = GetAriza();
 
-            Console.Write("Ariza kiriting: ");
-            Console.Write("Arizada Ism Familyangiz ,Qaysi kursda Uqimoqchiligingiz");
-            Console.Write("yoki sizni qiziqtirgan savol bilan raqamingizni qoldiring!");
-            Console.Write("Bizning o'zimiz siz bilan bog'lanamiz!");
+            Console.WriteLine("                                 Ariza kiriting: ");
+            Console.WriteLine("              Arizada Ism Familyangiz ,qaysi kursda o'qimoqchiligingiz");
+            Console.WriteLine("             yoki sizni qiziqtirgan savol bilan raqamingizni qoldiring!");
+            Console.WriteLine("                      Bizning o'zimiz siz bilan bog'lanamiz!");
             string arizaName = Console.ReadLine();
 
             int newId = arizas.Count > 0 ? arizas.Max(t => t.Id) + 1 : 1;
@@ -55,6 +57,7 @@ namespace Yangi.Services
 
         public List<Ariza> GetAriza()
         {
+            Console.Clear();
             if (!File.Exists(GetArizaPAth()))
             {
                 Console.WriteLine("Arizalar yo'q");
@@ -78,6 +81,7 @@ namespace Yangi.Services
 
         public void DeleteAriza()
         {
+            Console.Clear();
             List<Ariza> arizas = GetAriza();
 
             Console.Write("O'chirish uchun Ariza Id sini kiriting: ");
@@ -102,6 +106,7 @@ namespace Yangi.Services
 
         public void UpdateAriza()
         {
+            Console.Clear();
             List<Ariza> arizas = GetAriza();
 
             Console.Write("Yangilash uchun Ariza Id sini kiriting : ");

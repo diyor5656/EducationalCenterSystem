@@ -31,6 +31,7 @@ namespace Yangi.Services
             while (!exit)
             {
                 Console.Clear();
+                Console.WriteLine("Admin");
                 for (int i = 0; i < buyruq3.Count; i++)
                 {
                     if (i == index)
@@ -95,6 +96,7 @@ namespace Yangi.Services
             while (!exit)
             {
                 Console.Clear();
+                Console.WriteLine("Admin");
                 for (int i = 0; i < buyruq4.Count; i++)
                 {
                     if (i == index)
@@ -156,6 +158,7 @@ namespace Yangi.Services
             while (!exit)
             {
                 Console.Clear();
+                Console.WriteLine("Admin");
                 for (int i = 0; i < buyruq3.Count; i++)
                 {
                     if (i == index)
@@ -205,7 +208,7 @@ namespace Yangi.Services
             var index = 0;
             List<string> buyruq3 = new List<string>()
                 {
-            "Ariza to'ldirishj",
+            "Ariza to'ldirish",
             "Arizalarim",
             "Arizamni Tahrirlash",
             "Arizalarimni O'chirish",
@@ -214,6 +217,7 @@ namespace Yangi.Services
             while (!exit)
             {
                 Console.Clear();
+                Console.WriteLine("Talaba");
                 for (int i = 0; i < buyruq3.Count; i++)
                 {
                     if (i == index)

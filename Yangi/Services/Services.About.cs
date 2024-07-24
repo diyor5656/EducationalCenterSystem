@@ -26,6 +26,7 @@ namespace Yangi.Services
 
         public void AddAbout()
         {
+            Console.Clear();
             List<About> abouts = GetAbout();
 
             if (abouts.Count > 0)
@@ -53,6 +54,7 @@ namespace Yangi.Services
 
         public List<About> GetAbout()
         {
+            Console.Clear();
             if (File.Exists(GetAboutPAth()))
             {
                 Console.WriteLine("Malumotlar yo'q");
@@ -76,6 +78,7 @@ namespace Yangi.Services
 
         public void DeleteAbout()
         {
+            Console.Clear();
             List<About> abouts = GetAbout();
 
             if (abouts.Count == 0)
@@ -92,6 +95,7 @@ namespace Yangi.Services
 
         public void UpdateAbout()
         {
+            Console.Clear();
             List<About> abouts = GetAbout();
 
             if (abouts.Count == 0)

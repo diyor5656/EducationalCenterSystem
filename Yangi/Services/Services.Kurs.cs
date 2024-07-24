@@ -19,6 +19,7 @@ namespace Yangi.Services
 
         public void ClearKFile()
         {
+            Console.Clear();
             File.WriteAllText(GetKursPAth(), string.Empty);
             Console.WriteLine("Malumotlar tozalandi! ");
         }
@@ -31,6 +32,7 @@ namespace Yangi.Services
 
         public void AddKurs()
         {
+            Console.Clear();
             List<Kurs> kurss = GetKurs();
 
             Console.Write("Kurs nomini Kiriting: ");
@@ -52,6 +54,7 @@ namespace Yangi.Services
 
         public List<Kurs> GetKurs()
         {
+            Console.Clear();
             if (!File.Exists(GetKursPAth()))
             {
                 Console.WriteLine("Hozircha Kurslar yo'q");
@@ -75,6 +78,7 @@ namespace Yangi.Services
 
         public void DeleteKurs()
         {
+            Console.Clear();
             List<Kurs> kurss = GetKurs();
 
             Console.Write("O'chirish uchun Kurs Id sini kiriting: ");
@@ -99,6 +103,7 @@ namespace Yangi.Services
 
         public void UpdateKurs()
         {
+            Console.Clear();
             List<Kurs> kurss = GetKurs();
 
             Console.Write("Yangilash uchun Kursning Id sini kiriting : ");
