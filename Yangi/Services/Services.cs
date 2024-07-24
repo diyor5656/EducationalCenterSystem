@@ -20,6 +20,7 @@ namespace Yangi.Services
             var index = 0;
             List<string> buyruq3 = new List<string>()
         {
+
             "Kurs qo'shish",
             "Kurslar ro'yxati",
             "Kurslar ro'yxatini tahrirlash",
